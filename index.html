@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>Speech To Text</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <br><br><br><br><br><br><br><br><br>
+
+  <body class="container pt-5 bg-dark">
+    <div class="mt-4" id="div_language">
+      <h2 class="mb-3 text-light">Select Language</h2>
+      <select class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
+      <select class="form-select bg-secondary text-light mt-2" id="select_dialect"></select>
+    </div>
+    <h2 class="mt-4 text-light">Transcript</h2>
+    <div class="p-3" style="border: 1px solid gray; height: 300px; width: 700px; border-radius: 8px;">
+      <span id="final" class="text-light"></span>
+      <span id="interim" class="text-secondary"></span>
+    </div>
+    <div class="mt-4">
+      <button class="btn btn-success" id="start"   >Start</button>
+      <button class="btn btn-danger" id="stop"    >Stop</button>
+      <p id="status" class="lead mt-3 text-light" style="display: none">Listening ...</p>
+    </div>
+
+
+    <div id="speak"> </div>
+    <br><br>
+<button onclick="play()" class="btn1">Play</button>
+<button onclick="pause()" class="btn2">Pause</button>
+<audio id="myAudio">
+<source src="speech.mp3" type="audio/mpeg">
+</audio>
+
+   <div class="banner">
+     <img class="heart" src="heart1.png" alt="heart pic" height=200px; width=300px;>
+     <h1 class="one">Keep Your Heart</h1>
+       <h1 class="two">Healthy & Going!</h1>
+   </div>
+
+
+   <h3 class="instruct">Click On Start and allow microphone then click on play</h1>
+
+
+  </body>
+  <script src="index.js"></script>
+  <script src="./language.js"></script>
+</html>

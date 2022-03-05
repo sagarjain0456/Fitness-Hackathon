@@ -1,0 +1,94 @@
+.banner{
+  height: 200px;
+  width: 1550px;
+  border: 1px solid crimson;
+  position: absolute;
+  left:0px;
+  top: 0px;
+  background-color: #006699;
+  /* background-color: #003366; */
+}
+
+.heart{
+  position: absolute;
+  top:-40px;
+  left: 500px;
+}
+
+.one{
+  color: pink;
+  position: absolute;
+  top: 40px;
+  left: 750px;
+}
+
+
+.two{
+  color: orange;
+  position: absolute;
+  top: 100px;
+  left: 750px;
+}
+
+
+#speak{
+background: url("talksnip.png");
+width: 219px;
+height: 229px;
+position: absolute;
+right: 100px;
+top: 500px;
+animation:  speak 0.8s steps(5) infinite,
+forward ;
+animation-play-state: paused;
+}
+
+
+/*Code below use for walking animation*/
+@keyframes speak{
+
+0%{
+  background-position: 0px;
+}
+
+100%{
+background-position: -1087px ;
+}
+}
+
+
+.btn1 {
+      background-color: #000;
+      border: .5px solid crimson;
+      border-radius: 10px;
+      color: #fff;
+      padding: 8px 18px 8px 18px;
+      position: absolute;
+      right: 220px;
+      top: 750px;
+    }
+
+
+    .btn2 {
+          background-color: #000;
+          border: .5px solid crimson;
+          border-radius: 10px;
+          color: #fff;
+          padding: 8px 18px 8px 18px;
+          position: absolute;
+          right: 120px;
+          top:750px;
+        }
+
+
+    .instruct{
+      color: purple;
+      position: absolute;
+      top: 250px;
+
+    }
+
+
+#status{
+  display: none;
+}
